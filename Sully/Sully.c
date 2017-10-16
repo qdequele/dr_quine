@@ -1,14 +1,15 @@
 #include<stdio.h>
-#define decode(s,t,u,m) m##s##u##t
-#define m decode(a,n,i,m)
-#define T() int m()
-// hello
-T()
-{
-	FILE *f=fopen("Grace_kid.c", "w");
-	char *c="#include<stdio.h>%c#define decode(s,t,u,m) m##s##u##t%c#define m decode(a,n,i,m)%c#define T() int m()%c// hello%cT()%c{%c%cFILE *f=fopen(%cGrace_kid.c%c, %cw%c);%c%cchar *c=%c%s%c;%c%cif(f!=NULL){%c%c%cfprintf(f,c,10,10,10,10,10,10,10,9,34,34,34,34,10,9,34,c,34,10,9,10,9,9,10,9,9,10,9,10);%c%c%cfclose (f);%c%c}%c}";
-	if(f!=NULL){
-		fprintf(f,c,10,10,10,10,10,10,10,9,34,34,34,34,10,9,34,c,34,10,9,10,9,9,10,9,9,10,9,10);
-		fclose (f);
-	}
+#include<stdlib.h>
+#include<string.h>
+/*
+	1
+*/
+int main(){
+int i=5;if(strlen(__FILE__)!=7){i--;}
+char *e;asprintf(&e,"Sully_%d",i);char *fi=strcat(e,".c");FILE *f=fopen(fi,"w");char *o;
+char *c="#include<stdio.h>%1$c#include<stdlib.h>%1$c#include<string.h>%1$c/*%1$c%2$c1%1$c*/%1$cint main(){%1$cint i=%6$d;if(strlen(__FILE__)!=7){i--;}%1$cchar *e;asprintf(&e,%3$cSully_%4$cd%3$c,i);char *fi=strcat(e,%3$c.c%3$c);FILE *f=fopen(fi,%3$cw%3$c);char *o;%1$cchar *c=%3$c%5$s%3$c;%1$cif(f!=NULL){fprintf(f,c,10,9,34,37,c,i);fclose(f);}%1$cif(i>0){asprintf(&o,%3$ccc -Wall -Werror -Wextra -o %4$s1$s %4$s2$s && ./%4$s1$s%3$c,e,fi,e);system(o);}%1$c}";
+printf(c,10,9,34,37,c,i);
+printf("\n");
+if(f!=NULL){fprintf(f,c,10,9,34,37,c,i);fclose(f);}
+if(i>0){asprintf(&o,"cc -Wall -Werror -Wextra -o %1$s %2$s && ./%1$s",e,fi);system(o);}
 }
