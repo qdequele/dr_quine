@@ -6,7 +6,7 @@
 #    By: qdequele <qdequele@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/15 14:57:05 by qdequele          #+#    #+#              #
-#    Updated: 2017/10/16 15:02:52 by qdequele         ###   ########.fr        #
+#    Updated: 2017/10/17 10:15:19 by qdequele         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,11 +29,11 @@ $(NAME): $(OBJ)
 	@echo "\x1b[32m------------------- $(NAME) -------------------\x1b[0m"
 
 clean:
-	@/bin/rm -rf $(OBJ)
+	@/bin/rm -rf $(OBJ) $(NAME)_*.o
 	@echo "\x1b[33m------------------- $(NAME) -------------------\x1b[0m"
 
 fclean: clean
-	@/bin/rm -rf $(NAME)
+	@/bin/rm -rf $(NAME) $(NAME)_*.c
 	@echo "\x1b[31m------------------- $(NAME) -------------------\x1b[0m"
 
 re: fclean all
