@@ -6,7 +6,7 @@
 #    By: qdequele <qdequele@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/15 14:57:05 by qdequele          #+#    #+#              #
-#    Updated: 2017/10/17 10:15:19 by qdequele         ###   ########.fr        #
+#    Updated: 2017/10/17 11:14:28 by qdequele         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ clean:
 	@echo "\x1b[33m------------------- $(NAME) -------------------\x1b[0m"
 
 fclean: clean
-	@/bin/rm -rf $(NAME) $(NAME)_*.c
+	@/bin/rm -rf $(NAME) $(NAME)_*
 	@echo "\x1b[31m------------------- $(NAME) -------------------\x1b[0m"
 
 re: fclean all
